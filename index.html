@@ -1,78 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shania Sitton - Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Edit meta tags for SEO -->
+    <title>Shania Sitton | Portfolio</title>
+    <meta name="description" content="Portfolio of Shania Sitton, showcasing work and skills as a software developer." />
+
+    <!-- Customize icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        /* Add custom CSS styles here */
+    </style>
+
 </head>
 <body>
-    <header>
-        <div class="profile-info">
-            <h1>Shania Sitton</h1>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <!-- Header -->
+        <header>
             <div class="profile-info">
-                <img src="Github Profile Pic.jpg" alt="Shania Sitton Photo">
-        <h1>Shania Sitton</h1>
-        <div class="badges">
-            <!-- Badges for social media links -->
-        </div>
-    </div>
-    <nav>
-        <!-- Navigation links -->
-    </nav>
-</header>
-            <div class="badges">
-                <a href="https://www.facebook.com/shaniasitton" target="_blank"><img src="facebook-badge.png" alt="Facebook"></a>
-                <a href="https://www.linkedin.com/in/shaniasitton" target="_blank"><img src="linkedin-badge.png" alt="LinkedIn"></a>
-                <a href="https://github.com/shaniasitton" target="_blank"><img src="github-badge.png" alt="GitHub"></a>
-                <a href="mailto:shania.sitton@example.com"><img src="email-badge.png" alt="Email"></a>
+                <!-- Add your photo here -->
+                <img src="your-photo.jpg" alt="Shania Sitton Photo">
+                <h1>Shania Sitton</h1>
+                <div class="badges">
+                    <!-- Badges for social media links -->
+                    <a href="https://www.linkedin.com/in/shaniasitton" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shaniasitton" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:shania.sitton@example.com"><i class="far fa-envelope"></i></a>
+                </div>
             </div>
-        </div>
-        <nav>
+            <nav>
+                <!-- Navigation links -->
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I'm Shania Sitton, a cybersecurity professional and project manager passionate about leveraging technology to solve complex challenges. With expertise in active directory, helpdesk support, and cryptography, I'm dedicated to delivering innovative solutions and driving business success. Let's connect and explore opportunities to collaborate!</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>Cybersecurity: Threat detection, incident response, risk assessment</li>
+                <li>Project Management: Agile methodology, stakeholder communication, resource allocation</li>
+                <li>Active Directory: User provisioning, group policy management, LDAP integration</li>
+                <li>Helpdesk Support: Ticket triage, troubleshooting, end-user training</li>
+                <li>Cryptography: Encryption algorithms, key management, digital signatures</li>
             </ul>
-        </nav>
-    </header>
-    <section id="about" class="content">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio! I'm Shania Sitton, a cybersecurity professional and project manager passionate about leveraging technology to solve complex challenges. With expertise in active directory, helpdesk support, and cryptography, I'm dedicated to delivering innovative solutions and driving business success. Let's connect and explore opportunities to collaborate!</p>
-    </section>
-    <section id="skills" class="content">
-        <h2>Skills</h2>
-        <ul>
-            <li>Cybersecurity: Threat detection, incident response, risk assessment</li>
-            <li>Project Management: Agile methodology, stakeholder communication, resource allocation</li>
-            <li>Active Directory: User provisioning, group policy management, LDAP integration</li>
-            <li>Helpdesk Support: Ticket triage, troubleshooting, end-user training</li>
-            <li>Cryptography: Encryption algorithms, key management, digital signatures</li>
-        </ul>
-    </section>
-    <section id="projects" class="content">
-        <h2>Projects</h2>
-        <!-- Placeholder for projects -->
-    </section>
-    <section id="contact" class="content">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>Email: shania.sitton@example.com</p>
-            <p>Phone: +1 (123) 456-7890</p>
-        </div>
-        <div class="contact-form">
-            <!-- Placeholder for contact form -->
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2024 Shania Sitton</p>
-    </footer>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <!-- Placeholder for projects -->
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Email: shania.sitton@example.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+            <div class="contact-form">
+                <!-- Placeholder for contact form -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Your custom JavaScript code can be added here -->
+
 </body>
 </html>
