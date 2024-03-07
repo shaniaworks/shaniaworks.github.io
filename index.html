@@ -36,17 +36,26 @@
         }
         /* Add CSS styles for about me section */
         .about-section {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             margin-top: 50px;
+            text-align: center;
+            background-color: navy; /* Set background color to navy blue */
+            color: white; /* Set text color to white */
+            padding: 40px; /* Add padding for better spacing */
+            border-radius: 20px; /* Add border radius for rectangular shape */
         }
         .about-section h2 {
-            font-size: 28px;
+            font-size: 32px; /* Increase font size for heading */
             font-weight: bold;
             margin-bottom: 20px;
         }
         .about-section p {
-            font-size: 18px;
+            font-size: 20px; /* Increase font size for text */
             line-height: 1.6;
+            max-width: 500px; /* Limit text width for better readability */
         }
         .profile-pic {
             width: 200px;
@@ -80,8 +89,10 @@
     <!-- About Me Section -->
     <section id="about" class="about-section">
         <h2 class="animate__animated animate__fadeInDown">About Me</h2>
-        <p class="animate__animated animate__fadeInLeft">Hello! I'm Shania Sitton, a passionate individual with a knack for technology and security. I thrive on challenges and love to explore new avenues in the ever-evolving tech world.</p>
-        <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic animate__animated animate__fadeInRight">
+        <div class="animate__animated animate__fadeInLeft">
+            <p>Hello! I'm Shania Sitton, a passionate individual with a knack for technology and security. I thrive on challenges and love to explore new avenues in the ever-evolving tech world.</p>
+        </div>
+        <img src="Github Profile Pic.jpg" alt="Profile Picture" class="profile-pic animate__animated animate__fadeInRight">
     </section>
 
     <!-- Include script tag for Animate.css -->
