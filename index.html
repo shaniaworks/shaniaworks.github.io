@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Host Page</title>
-    <!-- Add link to external CSS file for styling -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Add link to Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         /* Add CSS styles for the navigation bar */
         .navbar {
@@ -34,6 +34,25 @@
             text-decoration: none;
             color: white; /* Set text color to white */
         }
+        /* Add CSS styles for about me section */
+        .about-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .about-section h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .profile-pic {
+            width: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -58,7 +77,14 @@
         </ul>
     </nav>
 
-    <!-- Rest of the content will be added later -->
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <h2 class="animate__animated animate__fadeInDown">About Me</h2>
+        <p class="animate__animated animate__fadeInLeft">Hello! I'm Shania Sitton, a passionate individual with a knack for technology and security. I thrive on challenges and love to explore new avenues in the ever-evolving tech world.</p>
+        <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic animate__animated animate__fadeInRight">
+    </section>
 
+    <!-- Include script tag for Animate.css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
 </body>
 </html>
