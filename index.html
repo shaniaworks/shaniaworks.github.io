@@ -31,6 +31,10 @@
         .navbar-brand {
             font-size: 24px;
         }
+        .navbar-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
         .navbar-nav {
             display: flex;
             list-style-type: none;
@@ -45,10 +49,11 @@
         }
         /* About Me section */
         .about-section {
-            background-color: #fff;
+            background-color: #FFF5EE; /* MistyRose */
             padding: 40px;
             border-radius: 10px;
             margin-bottom: 40px;
+            text-align: center;
         }
         .about-section h2 {
             font-size: 32px;
@@ -70,18 +75,21 @@
             padding: 40px;
             border-radius: 10px;
             margin-bottom: 40px;
-        }
-        .skills-section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
         .skill {
+            width: calc(33.33% - 20px);
+            background-color: #E6E6FA; /* Lavender */
+            padding: 20px;
+            border-radius: 10px;
             margin-bottom: 20px;
+            text-align: center;
         }
         .skill img {
             width: 100px;
             height: 100px;
-            margin-right: 20px;
             border-radius: 10px;
         }
         /* Projects section */
@@ -104,6 +112,8 @@
             color: white;
             padding: 40px;
             border-radius: 10px;
+            margin-bottom: 40px;
+            text-align: center;
         }
         .contact-section h2 {
             font-size: 32px;
@@ -113,13 +123,22 @@
             font-size: 18px;
             margin-bottom: 10px;
         }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Navigation Bar -->
         <nav class="navbar">
-            <div class="navbar-brand">Shania Sitton</div>
+            <div>
+                <div class="navbar-brand">Shania Sitton</div>
+                <div class="navbar-title">My Portfolio</div>
+            </div>
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="#about">About</a></li>
                 <li class="nav-item"><a href="#skills">Skills</a></li>
@@ -140,49 +159,40 @@
             <h2>Skills</h2>
             <div class="skill">
                 <img src="cybersecurity-icon.jpg" alt="Cybersecurity Icon">
-                <p>Cybersecurity: As a cybersecurity professional, I specialize in safeguarding digital assets and protecting against cyber threats.</p>
+                <h3>Cybersecurity</h3>
+                <p>As a cybersecurity professional, I specialize in safeguarding digital assets and protecting against cyber threats.</p>
             </div>
             <div class="skill">
                 <img src="project-management-icon.jpg" alt="Project Management Icon">
-                <p>Project Management: Experienced in managing projects from initiation to closure, ensuring timely delivery and stakeholder satisfaction.</p>
+                <h3>Project Management</h3>
+                <p>I have extensive experience in managing projects from initiation to completion, ensuring successful delivery within scope, time, and budget constraints.</p>
             </div>
             <div class="skill">
                 <img src="active-directory-icon.jpg" alt="Active Directory Icon">
-                <p>Active Directory: Proficient in configuring, managing, and troubleshooting Active Directory services for user authentication and access control.</p>
+                <h3>Active Directory</h3>
+                <p>Proficient in designing, implementing, and managing Active Directory services, including user and group administration, domain controller configuration, and group policy management.</p>
             </div>
             <div class="skill">
                 <img src="help-desk-support-icon.jpg" alt="Help Desk Support Icon">
-                <p>Help Desk Support: Skilled in providing technical support and assistance to end-users, resolving hardware and software issues promptly and efficiently.</p>
+                <h3>Help Desk Support</h3>
+                <p>Skilled in providing technical support and troubleshooting for hardware, software, and network issues to ensure optimal system performance and user satisfaction.</p>
             </div>
             <div class="skill">
                 <img src="cryptography-icon.jpg" alt="Cryptography Icon">
-                <p>Cryptography: Knowledgeable in cryptographic techniques and algorithms, ensuring data confidentiality and integrity in communication systems.</p>
-            </div>
-            <p>Click <a href="https://github.com/shaniasitton" target="_blank">here</a> to view my projects under these skills.</p>
-        </section>
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <h2>Projects</h2>
-            <div class="project">
-                <p>Project 1: Network Security Enhancement</p>
-                <p>Description: Enhancing network security infrastructure to mitigate risks and protect sensitive data.</p>
-            </div>
-            <div class="project">
-                <p>Project 2: Threat Detection and Incident Response</p>
-                <p>Description: Implementing proactive measures and rapid response protocols to identify and mitigate security incidents.</p>
-            </div>
-            <div class="project">
-                <p>Project 3: Data Encryption and Privacy Compliance</p>
-                <p>Description: Ensuring data confidentiality and compliance with privacy regulations through encryption and secure data handling practices.</p>
+                <h3>Cryptography</h3>
+                <p>Specialized knowledge in cryptographic algorithms, encryption techniques, and key management to secure sensitive data and communications.</p>
             </div>
         </section>
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <h2>Contact</h2>
-            <p class="contact-info">Email: shaniasitton@example.com</p>
             <p class="contact-info">Phone: +1234567890</p>
             <p class="contact-info">Connect with me on <a href="https://www.linkedin.com/in/shaniasitton" target="_blank">LinkedIn</a> and <a href="https://github.com/shaniasitton" target="_blank">GitHub</a></p>
         </section>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>&copy; 2024 Shania Sitton. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
