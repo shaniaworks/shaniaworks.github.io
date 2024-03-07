@@ -7,17 +7,30 @@
     <!-- Add link to Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
-        /* Add CSS styles for the navigation bar */
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Light Gray background */
+            color: #333; /* Dark Gray text */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Navigation bar styles */
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background-color: blue; /* Set background color to blue */
+            background-color: #002147; /* Navy Blue */
         }
         .navbar-brand {
-            font-size: 24px; /* Set font size for the name */
-            color: white; /* Set text color to white */
+            font-size: 24px;
+            color: #fff; /* White text */
         }
         .navbar-nav {
             list-style-type: none;
@@ -32,35 +45,123 @@
             font-size: 20px;
             font-weight: bold;
             text-decoration: none;
-            color: white; /* Set text color to white */
+            color: #fff; /* White text */
+            transition: color 0.3s ease;
         }
-        /* Add CSS styles for about me section */
-        .about-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-top: 50px;
+        .nav-item a:hover {
+            color: #ff9900; /* Orange on hover */
+        }
+        /* Section styles */
+        .section {
+            padding: 50px 0;
             text-align: center;
-            background-color: navy; /* Set background color to navy blue */
-            color: white; /* Set text color to white */
-            padding: 40px; /* Add padding for better spacing */
-            border-radius: 20px; /* Add border radius for rectangular shape */
         }
-        .about-section h2 {
-            font-size: 32px; /* Increase font size for heading */
+        .section-heading {
+            font-size: 32px;
             font-weight: bold;
+            color: #002147; /* Navy Blue text */
+            margin-bottom: 30px;
+        }
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .skill {
+            margin-bottom: 50px;
+        }
+        .skill-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #002147; /* Navy Blue text */
             margin-bottom: 20px;
         }
-        .about-section p {
-            font-size: 20px; /* Increase font size for text */
-            line-height: 1.6;
-            max-width: 500px; /* Limit text width for better readability */
+        .skill-description {
+            font-size: 18px;
+            color: #555; /* Dark Gray text */
+            margin-bottom: 20px;
         }
-        .profile-pic {
-            width: 200px;
-            border-radius: 50%;
+        .skill-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        /* Contact section styles */
+        .contact {
+            background-color: #f0f0f0; /* Light Gray background */
+            padding: 50px 0;
+        }
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .contact-heading {
+            font-size: 32px;
+            font-weight: bold;
+            color: #002147; /* Navy Blue text */
+            margin-bottom: 30px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
             margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #002147; /* Navy Blue */
+            color: #fff; /* White text */
+            font-size: 24px;
+            border-radius: 50%;
+            line-height: 40px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .social-links a:hover {
+            background-color: #ff9900; /* Orange on hover */
+        }
+        /* Footer styles */
+        footer {
+            background-color: #002147; /* Navy Blue */
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        /* Animation styles */
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+        .fadeInDown {
+            animation-name: fadeInDown;
+        }
+        .fadeInLeft {
+            animation-name: fadeInLeft;
+        }
+        .fadeInRight {
+            animation-name: fadeInRight;
+        }
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-item {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .navbar-nav {
+                margin-top: 20px;
+            }
+            .section-content {
+                padding: 0 20px;
+            }
         }
     </style>
 </head>
@@ -78,85 +179,89 @@
                 <a href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-                <a href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
                 <a href="#contact">Contact</a>
             </li>
         </ul>
     </nav>
 
     <!-- About Me Section -->
-    <section id="about" class="about-section">
-        <h2 class="animate__animated animate__fadeInDown">About Me</h2>
-        <div class="animate__animated animate__fadeInLeft">
-            <p>Hello! I'm Shania Sitton, a passionate individual with a knack for technology and security. I thrive on challenges and love to explore new avenues in the ever-evolving tech world.</p>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-heading animated fadeInDown">About Me</h2>
+                <div class="animated fadeInLeft">
+                    <p>Hello! I'm Shania Sitton, a passionate individual with expertise in cybersecurity, project management, active directory, help desk support, and cryptography. I specialize in securing digital assets, managing projects, providing technical support, and implementing encryption protocols.</p>
+                </div>
+                <img src="Github_Profile_Pic.jpg" alt="Profile Picture" class="profile-pic animated fadeInRight">
+            </div>
         </div>
-        <img src="Github Profile Pic.jpg" alt="Profile Picture" class="profile-pic animate__animated animate__fadeInRight">
     </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-heading animated fadeInDown">Skills</h2>
+                <!-- Skill 1: Cybersecurity -->
+                <div class="skill animated fadeInLeft">
+                    <h3 class="skill-title">Cybersecurity</h3>
+                    <p class="skill-description">As a cybersecurity expert, I specialize in protecting digital assets from cyber threats, implementing security measures, and ensuring compliance with industry regulations.</p>
+                    <img src="cybersecurity_image.jpg" alt="Cybersecurity Image" class="skill-image">
+                </div>
+                <!-- Skill 2: Project Management -->
+                <div class="skill animated fadeInUp">
+                    <h3 class="skill-title">Project Management</h3>
+                    <p class="skill-description">With a strong background in project management, I excel in planning, executing, and delivering projects on time and within budget, ensuring client satisfaction and organizational success.</p>
+                    <img src="projectmanagement_image.jpg" alt="Project Management Image" class="skill-image">
+                </div>
+                <!-- Skill 3: Active Directory -->
+                <div class="skill animated fadeInRight">
+                    <h3 class="skill-title">Active Directory</h3>
+                    <p class="skill-description">As an Active Directory specialist, I manage user accounts, group policies, and domain controllers to ensure secure access and efficient administration of IT resources.</p>
+                    <img src="activedirectory_image.jpg" alt="Active Directory Image" class="skill-image">
+                </div>
+                <!-- Skill 4: Help Desk Support -->
+                <div class="skill animated fadeInLeft">
+                    <h3 class="skill-title">Help Desk Support</h3>
+                    <p class="skill-description">With expertise in help desk support, I provide technical assistance, troubleshoot issues, and resolve user problems promptly to ensure seamless operations.</p>
+                    <img src="helpdesksupport_image.jpg" alt="Help Desk Support Image" class="skill-image">
+                </div>
+                <!-- Skill 5: Cryptography -->
+                <div class="skill animated fadeInUp">
+                    <h3 class="skill-title">Cryptography</h3>
+                    <p class="skill-description">As a cryptography specialist, I implement cryptographic algorithms, secure communication channels, and data encryption techniques to protect sensitive information.</p>
+                    <img src="cryptography_image.jpg" alt="Cryptography Image" class="skill-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="contact-heading animated fadeInDown">Contact Me</h2>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank" class="animated fadeInLeft"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/yourgithubprofile" target="_blank" class="animated fadeInUp"><i class="fab fa-github"></i></a>
+                    <a href="mailto:youremail@example.com" class="animated fadeInRight"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+1234567890" class="animated fadeInLeft"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Shania Sitton. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Include Font Awesome for social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- Include script tag for Animate.css -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
 </body>
 </html>
-<!-- Cybersecurity Section -->
-<section id="cybersecurity" class="skill-section">
-    <h2 class="animate__animated animate__fadeInDown">Cybersecurity</h2>
-    <div class="skill-description animate__animated animate__fadeInLeft">
-        <p>As a cybersecurity professional, I specialize in safeguarding digital assets and protecting against cyber threats. My expertise encompasses network security, data protection, threat detection, incident response, and security awareness training.</p>
-    </div>
-
-    <!-- Project 1: Network Security Enhancement -->
-    <div class="project animate__animated animate__fadeIn">
-        <h3>Project 1: Network Security Enhancement</h3>
-        <p>Enhancing network security infrastructure to mitigate risks and protect sensitive data.</p>
-        <ul class="project-highlights">
-            <li>Firewall configuration</li>
-            <li>IDS implementation</li>
-            <li>VPN setup</li>
-            <li>Security audits</li>
-            <li>Employee training</li>
-        </ul>
-        <div class="project-image">
-            <!-- Insert thumbnail image for Project 1 -->
-            <img src="NETWORK SECURITY THUMBNAIL.jpg" alt="Project 1 Thumbnail">
-        </div>
-    </div>
-
-    <!-- Project 2: Threat Detection and Incident Response -->
-    <div class="project animate__animated animate__fadeIn">
-        <h3>Project 2: Threat Detection and Incident Response</h3>
-        <p>Implementing proactive measures and rapid response protocols to identify and mitigate security incidents.</p>
-        <ul class="project-highlights">
-            <li>Real-time monitoring</li>
-            <li>Anomaly detection</li>
-            <li>Incident investigation</li>
-            <li>Remediation</li>
-        </ul>
-        <div class="project-image">
-            <!-- Insert thumbnail image for Project 2 -->
-            <img src="cYBER SECURITY THUMBNAIL.jpg" alt="Project 2 Thumbnail">
-        </div>
-    </div>
-
-    <!-- Project 3: Data Encryption and Privacy Compliance -->
-    <div class="project animate__animated animate__fadeIn">
-        <h3>Project 3: Data Encryption and Privacy Compliance</h3>
-        <p>Ensuring data confidentiality and compliance with privacy regulations through encryption and secure data handling practices.</p>
-        <ul class="project-highlights">
-            <li>Encryption algorithms</li>
-            <li>Key management</li>
-            <li>Data classification</li>
-            <li>Regulatory compliance assessments</li>
-        </ul>
-        <div class="project-image">
-            <!-- Insert thumbnail image for Project 3 -->
-            <img src="truecrypt_encryption 3.jpg" alt="Project 3 Thumbnail">
-        </div>
-    </div>
-
-    <!-- Animated illustrations -->
-    <div class="illustrations animate__animated animate__fadeIn">
-        <p>Animated videos showcasing cybersecurity concepts, threat scenarios, and security best practices.</p>
-    </div>
-</section>
