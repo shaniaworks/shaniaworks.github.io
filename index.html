@@ -95,6 +95,65 @@
             color: blue;
             font-weight: bold;
         }
+        /* Add CSS styles for project section */
+        .projects-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .project-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .project-box {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0; /* Set background color to light gray */
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .project-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .project-description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .project-link {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        /* Add CSS styles for contact section */
+        .contact-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .contact-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        /* Add CSS styles for footer */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f0f0; /* Set background color to light gray */
+            padding: 20px;
+        }
+        .footer-text {
+            font-size: 16px;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -130,89 +189,87 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
-        <!-- Skill Box 1: Cybersecurity -->
-        <div class="skill-box animate__animated animate__fadeIn">
+        <!-- Skill Box 1 -->
+        <div class="skill-box">
             <h3 class="skill-title">Cybersecurity</h3>
-            <img src="cybersecurity.jpg" alt="Cybersecurity Image" class="skill-image">
-            <p class="skill-description">As a cybersecurity professional, I specialize in safeguarding digital assets and protecting against cyber threats.</p>
-            <a href="link_to_cybersecurity_projects" class="skill-link">View Projects</a>
+            <p class="skill-description">Specializing in safeguarding digital assets and protecting against cyber threats.</p>
+            <a href="link_to_cybersecurity_repo" class="skill-link">View Projects</a>
         </div>
-
-        <!-- Skill Box 2: Project Management -->
-        <div class="skill-box animate__animated animate__fadeIn">
+        <!-- Skill Box 2 -->
+        <div class="skill-box">
             <h3 class="skill-title">Project Management</h3>
-            <img src="project_management.jpg" alt="Project Management Image" class="skill-image">
-            <p class="skill-description">Experienced in managing projects from initiation to completion, ensuring timely delivery and stakeholder satisfaction.</p>
-            <a href="link_to_project_management_projects" class="skill-link">View Projects</a>
+            <p class="skill-description">Proficient in managing projects from inception to completion, ensuring timely delivery and quality outcomes.</p>
+            <a href="link_to_project_management_repo" class="skill-link">View Projects</a>
         </div>
-
-        <!-- Skill Box 3: Active Directory -->
-        <div class="skill-box animate__animated animate__fadeIn">
+        <!-- Skill Box 3 -->
+        <div class="skill-box">
             <h3 class="skill-title">Active Directory</h3>
-            <img src="active_directory.jpg" alt="Active Directory Image" class="skill-image">
-            <p class="skill-description">Proficient in designing, implementing, and managing Active Directory services for user authentication and access control.</p>
-            <a href="link_to_active_directory_projects" class="skill-link">View Projects</a>
+            <p class="skill-description">Expertise in configuring and managing Active Directory environments for user authentication and authorization.</p>
+            <a href="link_to_active_directory_repo" class="skill-link">View Projects</a>
         </div>
-
-        <!-- Skill Box 4: Help Desk Support -->
-        <div class="skill-box animate__animated animate__fadeIn">
+        <!-- Skill Box 4 -->
+        <div class="skill-box">
             <h3 class="skill-title">Help Desk Support</h3>
-            <img src="help_desk_support.jpg" alt="Help Desk Support Image" class="skill-image">
-            <p class="skill-description">Skilled in providing technical support and troubleshooting to end-users, resolving issues promptly to ensure minimal downtime.</p>
-            <a href="link_to_help_desk_support_projects" class="skill-link">View Projects</a>
+            <p class="skill-description">Providing efficient technical support and troubleshooting to end-users for various IT issues.</p>
+            <a href="link_to_help_desk_support_repo" class="skill-link">View Projects</a>
         </div>
-
-        <!-- Skill Box 5: Cryptography -->
-        <div class="skill-box animate__animated animate__fadeIn">
+        <!-- Skill Box 5 -->
+        <div class="skill-box">
             <h3 class="skill-title">Cryptography</h3>
-            <img src="cryptography.jpg" alt="Cryptography Image" class="skill-image">
-            <p class="skill-description">Expertise in cryptographic algorithms and protocols, ensuring data confidentiality and integrity.</p>
-            <a href="link_to_cryptography_projects" class="skill-link">View Projects</a>
+            <p class="skill-description">Implementing cryptographic algorithms and protocols to secure data transmission and storage.</p>
+            <a href="link_to_cryptography_repo" class="skill-link">View Projects</a>
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="project-title">Projects</h2>
+        <!-- Project Box 1 -->
+        <div class="project-box">
+            <h3 class="project-name">Project Name 1</h3>
+            <p class="project-description">Description of project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="link_to_project1_repo" class="project-link">GitHub Repository</a>
+        </div>
+        <!-- Project Box 2 -->
+        <div class="project-box">
+            <h3 class="project-name">Project Name 2</h3>
+            <p class="project-description">Description of project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="link_to_project2_repo" class="project-link">GitHub Repository</a>
+        </div>
+        <!-- Project Box 3 -->
+        <div class="project-box">
+            <h3 class="project-name">Project Name 3</h3>
+            <p class="project-description">Description of project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="link_to_project3_repo" class="project-link">GitHub Repository</a>
+        </div>
+        <!-- Project Box 4 -->
+        <div class="project-box">
+            <h3 class="project-name">Project Name 4</h3>
+            <p class="project-description">Description of project 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="link_to_project4_repo" class="project-link">GitHub Repository</a>
+        </div>
+        <!-- Project Box 5 -->
+        <div class="project-box">
+            <h3 class="project-name">Project Name 5</h3>
+            <p class="project-description">Description of project 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="link_to_project5_repo" class="project-link">GitHub Repository</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="contact-title">Contact</h2>
+        <p class="contact-info">Email: shaniasitton@example.com</p>
+        <p class="contact-info">Phone: +1234567890</p>
+        <p class="contact-info">LinkedIn: <a href="https://www.linkedin.com/in/shaniasitton" class="contact-link">Shania Sitton</a></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p class="footer-text">&copy; 2024 Shania Sitton. All rights reserved.</p>
+    </footer>
+
     <!-- Include script tag for Animate.css -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
-</body>
-</html>
-   
-        <!-- Projects Section -->
-<section id="projects" class="projects-section">
-    <h2>Projects</h2>
-    <div class="project-box">
-        <div class="project">
-            <h3>Project Title 1</h3>
-            <p>This project involved enhancing network security infrastructure to mitigate risks and protect sensitive data. Key highlights included firewall configuration, IDS implementation, VPN setup, security audits, and employee training.</p>
-            <img src="project1.jpg" alt="Project Image 1">
-        </div>
-    </div>
-    <div class="project-box">
-        <div class="project">
-            <h3>Project Title 2</h3>
-            <p>This project focused on implementing proactive measures and rapid response protocols to identify and mitigate security incidents. Key highlights included real-time monitoring, anomaly detection, incident investigation, and remediation.</p>
-            <img src="project2.jpg" alt="Project Image 2">
-        </div>
-    </div>
-    <div class="project-box">
-        <div class="project">
-            <h3>Project Title 3</h3>
-            <p>This project ensured data confidentiality and compliance with privacy regulations through encryption and secure data handling practices. Key highlights included encryption algorithms, key management, data classification, and regulatory compliance assessments.</p>
-            <img src="project3.jpg" alt="Project Image 3">
-        </div>
-    </div>
-</section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <h2>Contact</h2>
-            <p class="contact-info">Phone: +1234567890</p>
-            <p class="contact-info">Connect with me on <a href="https://www.linkedin.com/in/shaniasitton" target="_blank">LinkedIn</a> and <a href="https://github.com/shaniasitton" target="_blank">GitHub</a></p>
-        </section>
-
-        <!-- Footer Section -->
-        <footer class="footer">
-            <p>&copy; 2024 Shania Sitton. All rights reserved.</p>
-        </footer>
-    </div>
 </body>
 </html>
