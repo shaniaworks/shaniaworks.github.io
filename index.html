@@ -3,226 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shania Sitton's Portfolio</title>
+    <title>Portfolio Host Page</title>
     <!-- Add link to Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
-        /* Global styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        /* Navigation bar */
+        /* Add CSS styles for the navigation bar */
         .navbar {
-            background-color: #333;
-            color: white;
-            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 20px;
+            background-color: blue; /* Set background color to blue */
         }
         .navbar-brand {
-            font-size: 24px;
-        }
-        .navbar-title {
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 24px; /* Set font size for the name */
+            color: white; /* Set text color to white */
         }
         .navbar-nav {
-            display: flex;
             list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
         .nav-item {
             margin-right: 20px;
         }
         .nav-item a {
-            text-decoration: none;
-            color: white;
+            font-size: 20px;
             font-weight: bold;
+            text-decoration: none;
+            color: white; /* Set text color to white */
         }
-        /* About Me section */
+        /* Add CSS styles for about me section */
         .about-section {
-            background-color: #FFF5EE; /* MistyRose */
-            padding: 40px;
-            border-radius: 10px;
-            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
             text-align: center;
+            background-color: navy; /* Set background color to navy blue */
+            color: white; /* Set text color to white */
+            padding: 40px; /* Add padding for better spacing */
+            border-radius: 20px; /* Add border radius for rectangular shape */
         }
         .about-section h2 {
-            font-size: 32px;
+            font-size: 32px; /* Increase font size for heading */
+            font-weight: bold;
             margin-bottom: 20px;
         }
         .about-section p {
-            font-size: 18px;
+            font-size: 20px; /* Increase font size for text */
             line-height: 1.6;
-            margin-bottom: 20px;
+            max-width: 500px; /* Limit text width for better readability */
         }
         .profile-pic {
             width: 200px;
             border-radius: 50%;
             margin-top: 20px;
         }
-        /* Skills section */
+        /* Add CSS styles for skills section */
         .skills-section {
-            background-color: #f3f3f3;
-            padding: 40px;
-            border-radius: 10px;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        .skills-section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .skills-container {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
         }
-        .skill {
-            width: calc(33.33% - 20px);
-            background-color: #E6E6FA; /* Lavender */
+        .skill-box {
+            width: 300px;
+            margin: 20px;
             padding: 20px;
+            background-color: #f0f0f0; /* Set background color to light gray */
             border-radius: 10px;
-            margin: 10px;
             text-align: center;
         }
-        .skill img {
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
+        .skill-title {
+            font-size: 24px;
+            font-weight: bold;
             margin-bottom: 10px;
         }
-        /* Projects section */
-        .projects-section {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        .projects-section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .project {
-            margin-bottom: 20px;
-        }
-        /* Contact section */
-        .contact-section {
-            background-color: #333;
-            color: white;
-            padding: 40px;
-            border-radius: 10px;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        .contact-section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .contact-info {
+        .skill-description {
             font-size: 18px;
+            line-height: 1.6;
+        }
+        .skill-image {
+            width: 100px;
             margin-bottom: 10px;
         }
-        /* Footer Section */
-        .footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
+        .skill-link {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-            <div class="navbar-brand">Shania Sitton</div>
-            <div class="navbar-title">My Portfolio</div>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="#about">About</a></li>
-                <li class="nav-item"><a href="#skills">Skills</a></li>
-                <li class="nav-item"><a href="#projects">Projects</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Brand Name -->
+        <div class="navbar-brand">Shania Sitton</div>
+        <!-- Navigation Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
-        <!-- About Me Section -->
-        <section id="about" class="about-section">
-            <h2>About Me</h2>
-            <div>
-                <p>Hello! I'm Shania Sitton, a passionate individual with a knack for technology and security. I thrive on challenges and love to explore new avenues in the ever-evolving tech world.</p>
-                <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
-            </div>
-        </section>
-     
-      <!-- Skills Section -->
-<section id="skills" class="skills-section">
-    <h2 class="section-title animate__animated animate__fadeInDown">Skills</h2>
-    <div class="skill-container animate__animated animate__fadeInUp">
-        <!-- Skill Box: Cybersecurity -->
-        <div class="skill-box">
-            <div class="skill-content">
-                <img src="cybersecurity-icon.png" alt="Cybersecurity Icon">
-                <h3>Cybersecurity</h3>
-                <p>Expertise in safeguarding digital assets, implementing security measures, and protecting against cyber threats.</p>
-                <a href="https://github.com/your_username/cybersecurity" target="_blank">View Repository</a>
-            </div>
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <h2 class="animate__animated animate__fadeInDown">About Me</h2>
+        <div class="animate__animated animate__fadeInLeft">
+            <p>Hello! I'm Shania Sitton, a passionate individual with a knack for technology and security. I thrive on challenges and love to explore new avenues in the ever-evolving tech world.</p>
+        </div>
+        <img src="Github Profile Pic.jpg" alt="Profile Picture" class="profile-pic animate__animated animate__fadeInRight">
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <!-- Skill Box 1: Cybersecurity -->
+        <div class="skill-box animate__animated animate__fadeIn">
+            <h3 class="skill-title">Cybersecurity</h3>
+            <img src="cybersecurity.jpg" alt="Cybersecurity Image" class="skill-image">
+            <p class="skill-description">As a cybersecurity professional, I specialize in safeguarding digital assets and protecting against cyber threats.</p>
+            <a href="link_to_cybersecurity_projects" class="skill-link">View Projects</a>
         </div>
 
-        <!-- Skill Box: Project Management -->
-        <div class="skill-box">
-            <div class="skill-content">
-                <img src="project-management-icon.png" alt="Project Management Icon">
-                <h3>Project Management</h3>
-                <p>Proficient in leading project teams, planning, executing, and delivering projects on time and within budget.</p>
-                <a href="https://github.com/your_username/project-management" target="_blank">View Repository</a>
-            </div>
+        <!-- Skill Box 2: Project Management -->
+        <div class="skill-box animate__animated animate__fadeIn">
+            <h3 class="skill-title">Project Management</h3>
+            <img src="project_management.jpg" alt="Project Management Image" class="skill-image">
+            <p class="skill-description">Experienced in managing projects from initiation to completion, ensuring timely delivery and stakeholder satisfaction.</p>
+            <a href="link_to_project_management_projects" class="skill-link">View Projects</a>
         </div>
 
-        <!-- Skill Box: Active Directory -->
-        <div class="skill-box">
-            <div class="skill-content">
-                <img src="active-directory-icon.png" alt="Active Directory Icon">
-                <h3>Active Directory</h3>
-                <p>Experience in managing Active Directory services, user accounts, group policies, and domain controllers.</p>
-                <a href="https://github.com/your_username/active-directory" target="_blank">View Repository</a>
-            </div>
+        <!-- Skill Box 3: Active Directory -->
+        <div class="skill-box animate__animated animate__fadeIn">
+            <h3 class="skill-title">Active Directory</h3>
+            <img src="active_directory.jpg" alt="Active Directory Image" class="skill-image">
+            <p class="skill-description">Proficient in designing, implementing, and managing Active Directory services for user authentication and access control.</p>
+            <a href="link_to_active_directory_projects" class="skill-link">View Projects</a>
         </div>
 
-        <!-- Skill Box: Help Desk Support -->
-        <div class="skill-box">
-            <div class="skill-content">
-                <img src="help-desk-support-icon.png" alt="Help Desk Support Icon">
-                <h3>Help Desk Support</h3>
-                <p>Skilled in providing technical assistance, troubleshooting hardware/software issues, and resolving IT problems.</p>
-                <a href="https://github.com/your_username/help-desk-support" target="_blank">View Repository</a>
-            </div>
+        <!-- Skill Box 4: Help Desk Support -->
+        <div class="skill-box animate__animated animate__fadeIn">
+            <h3 class="skill-title">Help Desk Support</h3>
+            <img src="help_desk_support.jpg" alt="Help Desk Support Image" class="skill-image">
+            <p class="skill-description">Skilled in providing technical support and troubleshooting to end-users, resolving issues promptly to ensure minimal downtime.</p>
+            <a href="link_to_help_desk_support_projects" class="skill-link">View Projects</a>
         </div>
 
-        <!-- Skill Box: Cryptography -->
-        <div class="skill-box">
-            <div class="skill-content">
-                <img src="cryptography-icon.png" alt="Cryptography Icon">
-                <h3>Cryptography</h3>
-                <p>Knowledge of cryptographic algorithms, encryption techniques, digital signatures, and secure communication protocols.</p>
-                <a href="https://github.com/your_username/cryptography" target="_blank">View Repository</a>
-            </div>
+        <!-- Skill Box 5: Cryptography -->
+        <div class="skill-box animate__animated animate__fadeIn">
+            <h3 class="skill-title">Cryptography</h3>
+            <img src="cryptography.jpg" alt="Cryptography Image" class="skill-image">
+            <p class="skill-description">Expertise in cryptographic algorithms and protocols, ensuring data confidentiality and integrity.</p>
+            <a href="link_to_cryptography_projects" class="skill-link">View Projects</a>
         </div>
-    </div>
-</section>
+    </section>
 
-
-       
+    <!-- Include script tag for Animate.css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+</body>
+</html>
+   
         <!-- Projects Section -->
 <section id="projects" class="projects-section">
     <h2>Projects</h2>
