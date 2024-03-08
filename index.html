@@ -1,316 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Google tag (gtag.js) -->
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4G5DVR6FCK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4G5DVR6FCK');
-</script>
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "lb9967r49a");
-</script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahipal</title>
-    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Shania Sitton - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: darkgrey; /* Changed color to dark grey */
+        }
+        .navbar-brand {
+            font-size: 24px;
+            color: white;
+        }
+        .navbar-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav-item {
+            margin-right: 20px;
+        }
+        .nav-item a {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+        /* CSS for My Portfolio Title */
+.portfolio-title {
+    text-align: center; /* Align the text to the center */
+    margin-top: 20px; /* Add some space between the navigation bar and the title */
+}
 
+.portfolio-title h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    color: #333; /* Set the text color */
+}
+        /* About Me Section */
+        .about-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+            text-align: center;
+            background-color: #f2f2f2; /* Light background color */
+            color: black; /* Text color */
+            padding: 40px;
+            border-radius: 20px;
+            animation: fadeIn 2s; /* Animation */
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        /* Skills and Projects Sections */
+        .skills-section,
+        .projects-section {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skill,
+        .project {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9; /* Light background color */
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Contact and Footer Section */
+        .contact-section,
+        .footer-section {
+            background-color: darkgrey; /* Changed color to dark grey */
+            color: white; /* Text color */
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-    <section id="header">
-        <div class="navbar-title">
-            <h3 class="title-first-name">
-                Mahipal
-            </h3>
-           
-        </div>
-        <div>
-            <ul class="navbar-menu">
-                <li><a class="profile-card-active" href="#aboutme"> About </a></li>
-                <li><a class="profile-card-active" href="#introduction">Works</a></li>
-                <li><a class="profile-card-active" href="#skill">Skills</a></li>
-                <li><a class="profile-card-active" href="#footer">Contacts</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="social-media">
-                <li>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <a href="https://www.linkedin.com/in/shania-sitton/" target="_blank">LinkedIn</a>
-                </li>
-                <li>
-                    <i class="fa-brands fa-github"></i>
-                    <a href="https://github.com/shaniaworks" target="_blank">Github</a>
-                </li>
-                <li>
-                    <i class="fa-regular fa-envelope"></i>
-                    <a href="shaniashaniaworks@gmail.com">Email</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section id="content-body">
-        <div class="body-part-1">
-            <div class="developer-intro">
-                <p>Shielding digital frontiers</p>
-                <p>Passionate cybersecurity defender</p>
-            </div><br>
-             <h2><span id="greetingText">Welcome to our cyber-safe space </span></h2>
-             <script>
-                       const greetings = [
-  'Welcome to our cyber-safe space','स्वागत है हमारे साइबर-सुरक्षित अंतरिक्ष में, जहाँ आपकी सुरक्षा हमारी प्राथमिकता है।','আমাদের সাইবার-নিরাপদ স্থানে স্বাগতম, যেখানে আপনার নিরাপত্তা আমাদের প্রাথমিকতা।','私たちのサイバーセーフスペースへようこそ。ここでは、あなたのセキュリティが最優先です','Mantente seguro del ciber','保持网络安全','Bienvenue dans notre espace cyber-sécurisé, où votre sécurité est notre priorité', 'Bienvenido a nuestro espacio cibernético seguro, donde su seguridad es nuestra prioridad','Fanacht sábháilte ón gcibear','Manténgase seguro del ciber','Добро пожаловать в наше кибер-безопасное пространство, где ваша безопасность - наш главный приоритет'];
-                        let index = 0;
-                
-                        function changeGreeting() {
-                            const greetingTextElement = document.getElementById('greetingText');
-                
-                            greetingTextElement.style.opacity = 0; // Fade out
-                
-                            setTimeout(() => {
-                                greetingTextElement.innerHTML = greetings[index]; // Update greeting content
-                                greetingTextElement.style.opacity = 1; // Fade in
-                                index = (index + 1) % greetings.length;
-                            }, 500); // Wait for fade out before updating greeting content
-                        }
-                
-                        setInterval(changeGreeting, 5000); // 2 seconds interval (including fade in/out time)
-                    </script>
-            <div class="body-title">
-                <!-- <h1>Talk is cheap<br>Show me the code</h1> -->
-                <h1>Shielding digital frontiers>Passionate cybersecurity defender</h1>
-                <p>Creating a Safe and User-Centered Digital Future</p>
-                <a href="https://www.linkedin.com/in/shania-sitton/">LET'S Connect!</a>
-            </div>
-            <div class="body-tail">
-                <h1>7+
-                </h1>
-                <p>Certificatons<br>EXPERIENCE</p>
-                <h1>4</h1>
-                <p>PROJECTS<br>COMPLETED</p>
-            </div>
-        </div>
-        <div class="body-part-2">
-            <div class="container">
-                
-                <div class="svg-animation">
-                  <img src="assets/cyber.svg">
-                </div>
-              
-                
-                
-              </div>
-            </div>
-         
-      
-    </section>
-    <section id="aboutme">
-        <div class="body-part-2">
-            <div class="container">
-                
-                <div class="svg-animation">
-                  <img src="assets/who.svg">
-                </div>
-              
-                
-                
-              </div>
-            </div>
-        <div class="body-part-1">
-            <div class="body-title">
-                <!-- <h1>Talk is cheap<br>Show me the code</h1> -->
-                <h1>Who Am I?</h1>
-                <p>Shania here! I'm your go-to cybersecurity enthusiast.<br>
-                    My mission is to make the digital realm safer.<br>
-                    I am an expert in threat detection and network security.<br>
-                    It's not just about security – I craft user-centric web experiences.<br>
-                    From intuitive interfaces to engaging designs, I focus on making the internet feel safe.<br>
-                    Let's collaborate to build a brighter digital future.<br>
-                    Together, let's make online spaces inviting.<br>
-                    Join me in creating a secure online environment.<br>
-                    We're building a world where everyone feels welcome. Welcome to our journey of cybersecurity and web development!
-                     </p>
-                <a href="https://www.linkedin.com/in/shania-sitton/">LET'S Connect!</a>
-            </div>
-         
-        </div>
-       
-              
-                
-                
-              </div>
-            </div>
-         
-      
-    </section>
+    <!-- Navigation Bar -->
+<nav class="navbar">
+    <!-- Brand Name -->
+    <div class="navbar-brand">Shania Sitton</div>
+    <!-- Navigation Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a href="#about">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+</nav>
 
-    <section id="introduction">
-        <div class="heading-container">
-            <h3 class="section-heading">Latest Projects</h3>
-            <p>Perfect solutions for digital experience</p>
-           
-        </div>
-        
-        <div class="cards-container">
-        <div class="cards">
-           
-            <div class="design-card active">
-                <div>
-                    <h3>Vampire Attacks, Siphoning Vitality from Wireless Ad hoc Sensor Networks</h3>
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                </div>
-                <p>Vampire Attacks" is a Java-powered tool designed to simulate and assess the ramifications of vampire attacks on wireless sensor networks. This software delves into the weaknesses inherent in such networks and replicates the actions of malevolent nodes that drain energy.</p>
-                
-            </div>
-            <div class="design-card">
-                <div>
-                    <h3>Automated ELK Stack Deployment</h3>
-                    <i class="fa-solid fa-code"></i>
-                </div>
-                <p>"This project entails establishing a robust network infrastructure to host a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application. Through meticulous load balancing, the system ensures high availability and resilience, while concurrently safeguarding against unauthorized access and potential security threats.".</p>
-                
-            </div>
-            <div class="design-card">
-                <div>
-                    <h3>Cryptography</h3>
-                    <i class="fa-solid fa-terminal"></i>
-                </div>
-                <p>"Project Description:
+<!-- My Portfolio Title -->
+<div class="portfolio-title">
+    <h1>My Portfolio</h1>
+</div>
 
-"This project delves into the realm of cryptography, exploring both symmetric and asymmetric encryption techniques. Symmetric cryptography, including block ciphers, hash functions, and message authentication codes, forms the foundation, complemented by asymmetric methods like RSA and Diffie-Hellman Key Exchange. Through deploying SSL and SSH solutions, the project demonstrates practical applications of these technologies. Additionally, the project incorporates tools such as OpenSSL for implementing cryptographic algorithms, along with tools for analyzing and defending against encryption-based attacks.".</p>
+   <!-- About Me Section -->
+<section id="about" class="about-section">
+    <h2 style="font-family: 'Arial', sans-serif; font-size: 32px;">About Me</h2>
+    <div style="font-family: 'Arial', sans-serif; font-size: 20px;">
+        <img src="Github Profile Pic.jpg" alt="Profile Picture" style="width: 200px; border-radius: 50%;">
+        <p style="margin-bottom: 20px;">Hello! I'm Shania Sitton, a passionate individual with a knack for technology and security.</p>
+        <p style="margin-bottom: 20px;">I thrive on challenges and love to explore new avenues in the ever-evolving tech world.</p>
+        <p style="margin-bottom: 20px;">Let's connect and create something awesome together!</p>
+    </div>
+</section>
 
-        
+    <!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-section">
+        <!-- Skill 1: Cybersecurity -->
+        <div class="skill animate__animated animate__fadeIn">
+            <div class="skill-box">
+                <img src="cybersecurity-icon.png" alt="Cybersecurity Icon">
+                <h3>Cybersecurity</h3>
+                <p>Specialize in safeguarding digital assets and protecting against cyber threats.</p>
+                <a href="#">GitHub Repository</a>
+            </div>
         </div>
-        <div class="image-container">
-            <div class="body-part-2">
-                <div class="container">
-                    
-                    <div class="svg-animation">
-                      <img src="assets/project.svg">
-                    </div>
-                  
-                </div>
-                    
-                  </div>
-                </div>
-    </section>
-    <section id="skill">
-        <div class="heading-container">
-            <h3 class="section-heading">Skills</h3>
-            
-           
+
+        <!-- Skill 2: Project Management -->
+        <div class="skill animate__animated animate__fadeIn">
+            <div class="skill-box">
+                <img src="project-management-icon.png" alt="Project Management Icon">
+                <h3>Project Management</h3>
+                <p>Expertise in managing projects from initiation to closure, ensuring delivery on time and within budget.</p>
+                <a href="#">GitHub Repository</a>
+            </div>
         </div>
-        <div class="image-container">
-            <div class="body-part-2">
-                <div class="container">
-                    
-                    <div class="svg-animation">
-                      <img src="assets/skill.svg">
-                    </div>
-                  
-                </div>
-                    
-                  </div>
-                </div>
-        <div class="cards-container">
-        <div class="cards">
-           
-            <div class="design-card active">
-                <div>
-                    <h3>Cybersecurity</h3>
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                </div>
-                <p>Threat Detection • Network Security • Cybersecurity Architecture • Information Security Management System (ISMS) • IT Audit • IT Security Assessments • Penetration Testing</p>
-                
+
+        <!-- Skill 3: Active Directory -->
+        <div class="skill animate__animated animate__fadeIn">
+            <div class="skill-box">
+                <img src="active-directory-icon.png" alt="Active Directory Icon">
+                <h3>Active Directory</h3>
+                <p>Proficient in managing Active Directory services, including user and group management, security, and policies.</p>
+                <a href="#">GitHub Repository</a>
             </div>
-            <div class="design-card">
-                <div>
-                    <h3>Web Development</h3>
-                    <i class="fa-solid fa-code"></i>
-                </div>
-                <p>Java • MATLAB • SQL • Full-Stack Development • JavaScript • HTML • Cascading Style Sheets (CSS) • Front-End Development • PHP</p>
-                
+        </div>
+
+        <!-- Skill 4: Help Desk Support -->
+        <div class="skill animate__animated animate__fadeIn">
+            <div class="skill-box">
+                <img src="help-desk-icon.png" alt="Help Desk Icon">
+                <h3>Help Desk Support</h3>
+                <p>Provide technical assistance and support to end-users, resolving issues promptly and efficiently.</p>
+                <a href="#">GitHub Repository</a>
             </div>
-            <div class="design-card">
-                <div>
-                    <h3>Others</h3>
-                    <i class="fa-solid fa-terminal"></i>
-                </div>
-                <p>Google Cloud Platform (GCP) • Computer Science • Software Development • Project Management • Communication • Training • Leadership • Marketing • Customer Service • Microsoft Office</p>
-                
+        </div>
+
+        <!-- Skill 5: Cryptography -->
+        <div class="skill animate__animated animate__fadeIn">
+            <div class="skill-box">
+                <img src="cryptography-icon.png" alt="Cryptography Icon">
+                <h3>Cryptography</h3>
+                <p>Specialize in cryptographic techniques for securing data transmission and storage.</p>
+                <a href="#">GitHub Repository</a>
             </div>
-            
         </div>
     </div>
-        
-        </div>
-      
-    </section>
- 
-    <section id="footer">
-        <div class="footer-left">
-            <form name = 'contactus' netlify>
-            <h2>"Let's team up to craft something extraordinary."</h2>
+</section>
 
-            <div class="email-form">
-                   
-                <h2>Start by <span>saying hi</span></h2>
-               
-                <input type="text" name="name" id="" placeholder="Your name">
-                <input type="email" name="email" id="" placeholder="Email Address">
-                <div>
-                    <input type="text" name="Messgae" id="" placeholder="Messgae">
-                    <button type="submit">Send</button>
-                </div>
-                    </form>
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-section">
+        <!-- Project 1: Network Security Enhancement -->
+        <div class="project animate__animated animate__fadeIn">
+            <div class="project-box">
+                <img src="network-security-icon.png" alt="Network Security Icon">
+                <h3>Network Security Enhancement</h3>
+                <p>Enhancing network security infrastructure to mitigate risks and protect sensitive data.</p>
+                <a href="#">GitHub Repository</a>
             </div>
+        </div>
 
-            <div class="footer-title">
-                <h3 class="title-first-name">
-                    Shania
-                </h3>
-                <h3 class="title-last-name">
-                  Jangra
-                </h3>
+        <!-- Project 2: Threat Detection and Incident Response -->
+        <div class="project animate__animated animate__fadeIn">
+            <div class="project-box">
+                <img src="threat-detection-icon.png" alt="Threat Detection Icon">
+                <h3>Threat Detection and Incident Response</h3>
+                <p>Implementing proactive measures and rapid response protocols to identify and mitigate security incidents.</p>
+                <a href="#">GitHub Repository</a>
             </div>
         </div>
-        <div class="footer-right">
-            <div class="footer-email-intro">
-                <p>Information</p>
-                <h6>Georgia, United States </h6>
-                <h3>contact@shaniaworks.github</h3>
-            </div>
-            <div class="footer-nav-menu">
-                <ul class="footer-menu">
-                    <li><a class="profile-card-active" href="#aboutme"> About </a></li>
-                    <li><a class="profile-card-active" href="#introduction">Works</a></li>
-                    <li><a class="profile-card-active" href="#skill">Skills</a></li>
-                  
-                </ul>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/shania-sitton/" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/shaniaworks" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                
+
+        <!-- Project 3: Data Encryption and Privacy Compliance -->
+        <div class="project animate__animated animate__fadeIn">
+            <div class="project-box">
+                <img src="data-encryption-icon.png" alt="Data Encryption Icon">
+                <h3>Data Encryption and Privacy Compliance</h3>
+                <p>Ensuring data confidentiality and compliance with privacy regulations through encryption and secure data handling practices.</p>
+                <a href="#">GitHub Repository</a>
             </div>
         </div>
+
+   <!-- Contact Section -->
+<section id="contact" style="text-align: center;">
+    <h2 style="font-family: 'Arial', sans-serif; font-size: 32px;">Contact</h2>
+    <div class="contact-section">
+        <p>Email: shaniashaniaworks@gmail.com</p>
+        <p>Phone: +1 (917) 379-0194</p> <!-- Add your phone number here -->
+        <!-- Other contact information goes here -->
+    </div>
+</section>
+<!-- Social Media Links -->
+        <p>
+            <a href="https://www.linkedin.com/in/shania-sitton/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/shaniaworks" target="_blank">GitHub</a>
+            <!-- Add more social media links as needed -->
+        </p>
+    </div>
+</section>
+    <!-- Footer Section -->
+    <section class="footer-section">
+        <p>All rights reserved &copy; 2024 Shania Sitton</p>
     </section>
-    <script src="script.js"></script>
 </body>
-
 </html>
