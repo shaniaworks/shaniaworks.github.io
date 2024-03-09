@@ -1,123 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shania Sitton - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Resetting default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Body styles */
+        /* General Styling */
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            color: #333;
         }
 
-        /* Navigation Bar styles */
-        .navbar {
-            background-color: #fff;
-            border-bottom: 2px solid skyblue;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-
-        .nav-items {
-            display: flex;
-            list-style-type: none;
-        }
-
-        .nav-items a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px 20px;
-            border-right: 1px solid #ddd;
-            transition: background-color 0.3s;
-        }
-
-        .nav-items a:last-child {
-            border-right: none;
-        }
-
-        .nav-items a:hover {
-            background-color: #f0f0f0;
-        }
-
-        /* Header Section styles */
+        /* Header Styling */
         .header {
             background-color: skyblue;
             text-align: center;
-            padding: 20px 0;
+            padding: 20px;
         }
 
         .name {
             font-size: 48px;
             font-weight: bold;
             color: white;
-            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
             margin-bottom: 20px;
         }
 
-        .resume-btn {
-            background-color: white;
-            color: skyblue;
-            border: 2px solid skyblue;
-            padding: 10px 20px;
-            font-size: 18px;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .resume-btn:hover {
-            background-color: skyblue;
-            color: white;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropbtn {
-            background-color: transparent;
-            color: white;
-            font-size: 24px;
+        .resume-button {
+            background-color: #fff;
             border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
             cursor: pointer;
         }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            z-index: 1;
-            border-radius: 10px;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        /* Down Arrow Styling */
+        .down-arrow {
+            text-align: center;
+            margin-top: 20px;
         }
 
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
+        .arrow {
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 10px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            cursor: pointer;
         }
+    </style>
+</head>
 
-        .dropdown-content a:hover {
-            background-color: #f0f0f0;
-        }
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="name">SHANIA</div>
+        <div class="title">Tech Whiz</div>
+        <img class="profile-pic" src="Github Profile Pic.jpg" alt="Profile Picture">
+        <button class="resume-button">View My Resume</button>
+    </div>
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+    <!-- Down Arrow Section -->
+    <div class="down-arrow">
+        <div class="arrow"></div>
+    </div>
+</body>
+
+</html>
+
 
         /* Main Sections styles */
         section {
