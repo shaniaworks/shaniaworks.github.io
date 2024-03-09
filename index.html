@@ -4,76 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shania Sitton - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Shania's Portfolio</title>
     <style>
-        /* General Styling */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Header Styling */
-        .header {
-            background-color: skyblue;
-            text-align: center;
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 20px;
+            background-color: darkgrey;
         }
 
-        .name {
-            font-size: 48px;
-            font-weight: bold;
+        .navbar-brand {
+            font-size: 24px;
             color: white;
-            margin-bottom: 10px;
+        }
+
+        .navbar-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-item {
+            margin-right: 20px;
+        }
+
+        .nav-item a {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Profile Section */
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
         }
 
         .profile-pic {
+            width: 200px;
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-bottom: 20px;
         }
 
         .resume-button {
-            background-color: #fff;
+            padding: 10px 20px;
+            background-color: skyblue;
+            color: white;
             border: none;
             border-radius: 20px;
-            padding: 10px 20px;
-            font-size: 20px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
 
-        /* Down Arrow Styling */
+        .resume-button:hover {
+            background-color: #4CAF50;
+        }
+
         .down-arrow {
-            text-align: center;
             margin-top: 20px;
-        }
-
-        .arrow {
-            border: solid white;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 10px;
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
+            font-size: 30px;
             cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-    <!-- Header Section -->
-    <div class="header">
-        <div class="name">SHANIA</div>
-        <div class="title">Tech Whiz</div>
-        <img class="profile-pic" src="Github Profile Pic.jpg" alt="Profile Picture">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Brand Name -->
+        <div class="navbar-brand">Shania's Portfolio</div>
+        <!-- Navigation Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a href="#certificates">Certificates</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="profile-section">
+        <h1>SHANIA</h1>
+        <p>Tech Whiz</p>
+        <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+        <br>
         <button class="resume-button">View My Resume</button>
+        <br>
+        <span class="down-arrow">&#9660;</span>
     </div>
 
-    <!-- Down Arrow Section -->
-    <div class="down-arrow">
-        <div class="arrow"></div>
-    </div>
 </body>
 
 </html>
