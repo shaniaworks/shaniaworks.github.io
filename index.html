@@ -61,24 +61,35 @@
             0% { opacity: 0; }
             100% { opacity: 1; }
         }
-        /* Skills and Projects Sections */
-        .skills-section,
-        .projects-section {
+         /* Skills Section styles */
+        #skills {
+            text-align: center;
             margin-top: 50px;
+        }
+
+        .skills-section {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
-        .skill,
-        .project {
+
+        .skill {
             width: 300px;
             margin: 20px;
             padding: 20px;
-            background-color: #f9f9f9; /* Light background color */
+            background-color: #f9f9f9;
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        .skill h3 {
+            font-size: 24px;
+            color: #333; /* Text color */
+        }
+    </style>
+</head>
+<body>
         /* Contact and Footer Section */
         .contact-section,
         .footer-section {
@@ -127,64 +138,9 @@
     </div>
 </section>
 
-    <!-- Skills Section -->
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-section">
-        <!-- Skill 1: Cybersecurity -->
-        <div class="skill animate__animated animate__fadeIn">
-            <div class="skill-box">
-                <img src="cybersecurity-icon.png" alt="Cybersecurity Icon">
-                <h3>Cybersecurity</h3>
-                <p>Specialize in safeguarding digital assets and protecting against cyber threats.</p>
-                <a href="#">GitHub Repository</a>
-            </div>
-        </div>
-
-        <!-- Skill 2: Project Management -->
-        <div class="skill animate__animated animate__fadeIn">
-            <div class="skill-box">
-                <img src="project-management-icon.png" alt="Project Management Icon">
-                <h3>Project Management</h3>
-                <p>Expertise in managing projects from initiation to closure, ensuring delivery on time and within budget.</p>
-                <a href="#">GitHub Repository</a>
-            </div>
-        </div>
-
-        <!-- Skill 3: Active Directory -->
-        <div class="skill animate__animated animate__fadeIn">
-            <div class="skill-box">
-                <img src="active-directory-icon.png" alt="Active Directory Icon">
-                <h3>Active Directory</h3>
-                <p>Proficient in managing Active Directory services, including user and group management, security, and policies.</p>
-                <a href="#">GitHub Repository</a>
-            </div>
-        </div>
-
-        <!-- Skill 4: Help Desk Support -->
-        <div class="skill animate__animated animate__fadeIn">
-            <div class="skill-box">
-                <img src="help-desk-icon.png" alt="Help Desk Icon">
-                <h3>Help Desk Support</h3>
-                <p>Provide technical assistance and support to end-users, resolving issues promptly and efficiently.</p>
-                <a href="#">GitHub Repository</a>
-            </div>
-        </div>
-
-        <!-- Skill 5: Cryptography -->
-        <div class="skill animate__animated animate__fadeIn">
-            <div class="skill-box">
-                <img src="cryptography-icon.png" alt="Cryptography Icon">
-                <h3>Cryptography</h3>
-                <p>Specialize in cryptographic techniques for securing data transmission and storage.</p>
-                <a href="#">GitHub Repository</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects">
+  
+<!-- My Projects Section -->
+<section id="my projects">
     <h2>Projects</h2>
     <div class="projects-section">
         <!-- Project 1:  -->NodeGoat
@@ -236,6 +192,49 @@
                 <a href="https://github.com/shaniaworks/gun">GitHub Repository</a>
             </div>
         </div>
+
+        <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-section">
+            <!-- Skill 1: Cybersecurity -->
+            <div class="skill animate__animated animate__fadeIn">
+                <div class="skill-box">
+                    <h3>Cybersecurity</h3>
+                </div>
+            </div>
+
+            <!-- Skill 2: Project Management -->
+            <div class="skill animate__animated animate__fadeIn">
+                <div class="skill-box">
+                    <h3>Project Management</h3>
+                </div>
+            </div>
+
+            <!-- Skill 3: Active Directory -->
+            <div class="skill animate__animated animate__fadeIn">
+                <div class="skill-box">
+                    <h3>Active Directory</h3>
+                </div>
+            </div>
+
+            <!-- Skill 4: Help Desk Support -->
+            <div class="skill animate__animated animate__fadeIn">
+                <div class="skill-box">
+                    <h3>Help Desk Support</h3>
+                </div>
+            </div>
+
+            <!-- Skill 5: Cryptography -->
+            <div class="skill animate__animated animate__fadeIn">
+                <div class="skill-box">
+                    <h3>Cryptography</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
         
    <!-- Contact Section -->
 <section id="contact" style="text-align: center;">
