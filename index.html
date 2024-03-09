@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shania</title>
+    <title>Shania Sitton - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Navigation Bar */
         .navbar {
@@ -12,308 +12,255 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background-color: darkgrey;
+            background-color: darkgrey; /* Changed color to dark grey */
         }
-
         .navbar-brand {
             font-size: 24px;
             color: white;
         }
-
         .navbar-nav {
             list-style-type: none;
             margin: 0;
             padding: 0;
             display: flex;
         }
-
         .nav-item {
             margin-right: 20px;
         }
-
         .nav-item a {
             font-size: 20px;
             font-weight: bold;
             text-decoration: none;
             color: white;
         }
+        /* CSS for My Portfolio Title */
+.portfolio-title {
+    text-align: center; /* Align the text to the center */
+    margin-top: 20px; /* Add some space between the navigation bar and the title */
+}
 
-        /* Profile Section */
-        .profile-section {
+.portfolio-title h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    color: #333; /* Set the text color */
+}
+        /* About Me Section */
+        .about-section {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
+            flex-direction: column;
             margin-top: 50px;
-        }
-
-        .profile-pic {
-            width: 200px;
-            border-radius: 50%;
-        }
-
-        .resume-button {
-            padding: 10px 20px;
-            background-color: skyblue;
-            color: white;
-            border: none;
+            text-align: center;
+            background-color: #f2f2f2; /* Light background color */
+            color: black; /* Text color */
+            padding: 40px;
             border-radius: 20px;
-            cursor: pointer;
-            transition: background-color 0.3s;
+            animation: fadeIn 2s; /* Animation */
         }
-
-        .resume-button:hover {
-            background-color: #4CAF50;
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
-
-        .down-arrow {
-            margin-top: 20px;
-            font-size: 30px;
-            cursor: pointer;
+        /* Skills and Projects Sections */
+        .skills-section,
+        .projects-section {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skill,
+        .project {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9; /* Light background color */
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Contact and Footer Section */
+        .contact-section,
+        .footer-section {
+            background-color: darkgrey; /* Changed color to dark grey */
+            color: white; /* Text color */
+            padding: 40px;
+            text-align: center;
         }
     </style>
 </head>
-
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <!-- Brand Name -->
-        <div class="navbar-brand">Shania's Portfolio</div>
-        <!-- Navigation Links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-                <a href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-                <a href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a href="#certificates">Certificates</a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <!-- Brand Name -->
+    <div class="navbar-brand">Shania Sitton</div>
+    <!-- Navigation Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a href="#about">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+</nav>
 
-    <!-- Profile Section -->
-    <div class="profile-section">
-        <h1>SHANIA</h1>
-        <p>Tech Whiz</p>
-        <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
-        <br>
-        <button class="resume-button">View My Resume</button>
-        <br>
-        <span class="down-arrow">&#9660;</span>
-    </div>
+<!-- My Portfolio Title -->
+<div class="portfolio-title">
+    <h1>My Portfolio</h1>
+</div>
 
-</body>
-
-</html>
-
-
-<!-- About Me Section -->
+   <!-- About Me Section -->
 <section id="about" class="about-section">
     <h2 style="font-family: 'Arial', sans-serif; font-size: 32px;">About Me</h2>
-    <div style="font-family: 'Arial', sans-serif; font-size: 20px; display: flex;">
-        <div style="width: 30%; padding-right: 20px;">
-            <div style="background-color: lightblue; padding: 10px; border-radius: 10px;">
-                <p style="margin-bottom: 0;">Detail-oriented, organized and meticulous employee. Works at a fast pace to meet tight deadlines. Enthusiastic team player ready to contribute to company success. Resourceful team player with experience with standard software applications and social media platforms. Well-versed in business organization and strategies for successfully modernizing workplaces. Skilled at project support with a proven history of solutions-oriented problem-solving.</p>
+    <div style="font-family: 'Arial', sans-serif; font-size: 20px;">
+        <img src="Github Profile Pic.jpg" alt="Profile Picture" style="width: 200px; border-radius: 50%;">
+        <p style="margin-bottom: 20px;">Hello! I'm Shania Sitton, a passionate individual with a knack for technology and security.</p>
+        <p style="margin-bottom: 20px;">I thrive on challenges and love to explore new avenues in the ever-evolving tech world.</p>
+        <p style="margin-bottom: 20px;">Let's connect and create something awesome together!</p>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-section">
+        <!-- Skill 1: Cybersecurity -->
+        <div class="skill animate__animated animate__fadeIn">
+            <div class="skill-box">
+                <img src="cybersecurity-icon.png" alt="Cybersecurity Icon">
+                <h3>Cybersecurity</h3>
+                <p>Specialize in safeguarding digital assets and protecting against cyber threats.</p>
+                <a href="#">GitHub Repository</a>
             </div>
         </div>
-        <div style="width: 70%;">
-            <p style="margin-bottom: 20px;">Hello! I'm Shania Sitton, a passionate individual with a knack for technology and security. I thrive on challenges and love to explore new avenues in the ever-evolving tech world. Let's connect and create something awesome together!</p>
+
+        <!-- Skill 2: Project Management -->
+        <div class="skill animate__animated animate__fadeIn">
+            <div class="skill-box">
+                <img src="project-management-icon.png" alt="Project Management Icon">
+                <h3>Project Management</h3>
+                <p>Expertise in managing projects from initiation to closure, ensuring delivery on time and within budget.</p>
+                <a href="#">GitHub Repository</a>
+            </div>
+        </div>
+
+        <!-- Skill 3: Active Directory -->
+        <div class="skill animate__animated animate__fadeIn">
+            <div class="skill-box">
+                <img src="active-directory-icon.png" alt="Active Directory Icon">
+                <h3>Active Directory</h3>
+                <p>Proficient in managing Active Directory services, including user and group management, security, and policies.</p>
+                <a href="#">GitHub Repository</a>
+            </div>
+        </div>
+
+        <!-- Skill 4: Help Desk Support -->
+        <div class="skill animate__animated animate__fadeIn">
+            <div class="skill-box">
+                <img src="help-desk-icon.png" alt="Help Desk Icon">
+                <h3>Help Desk Support</h3>
+                <p>Provide technical assistance and support to end-users, resolving issues promptly and efficiently.</p>
+                <a href="#">GitHub Repository</a>
+            </div>
+        </div>
+
+        <!-- Skill 5: Cryptography -->
+        <div class="skill animate__animated animate__fadeIn">
+            <div class="skill-box">
+                <img src="cryptography-icon.png" alt="Cryptography Icon">
+                <h3>Cryptography</h3>
+                <p>Specialize in cryptographic techniques for securing data transmission and storage.</p>
+                <a href="#">GitHub Repository</a>
+            </div>
         </div>
     </div>
 </section>
 
-
-
-        /* Main Sections styles */
-        section {
-            padding: 40px 20px;
-        }
-
-        .about-section, .experience-section, .education-section, .projects-section, .skills-section, .certificates-section, .contact-section {
-            background-color: skyblue;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            color: white;
-        }
-
-        .section-title {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .section-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .section-item {
-            width: calc(33.33% - 20px);
-            margin: 10px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-        }
-
-        .section-item img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-
-        .section-item p {
-            margin-bottom: 10px;
-        }
-
-        /* Footer Section styles */
-        .footer {
-            background-color: skyblue;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .footer p {
-            color: white;
-            font-size: 18px;
-        }
-
-        .up-arrow {
-            font-size: 24px;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .up-arrow:hover {
-            transform: translateY(-3px);
-        }
-
-        .social-icons {
-            margin-top: 10px;
-        }
-
-        .social-icons img {
-            width: 30px;
-            margin: 0 5px;
-            vertical-align: middle;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul class="nav-items">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Header Section -->
-    <header class="header">
-        <div class="name">SHANIA</div>
-        <button class="resume-btn">View Resume</button>
-        <div class="dropdown">
-            <button class="dropbtn">&#9660;</button>
-            <div class="dropdown-content">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#certificates">Certificates</a>
-                <a href="#contact">Contact</a>
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-section">
+        <!-- Project 1:  -->NodeGoat
+        <div class="project animate__animated animate__fadeIn">
+            <div class="project-box">
+                <img src="network-security-icon.png" alt="Network Security Icon">
+                <h3>NodeGoat</h3>
+                <p>On this project, I utilized the OWASP NodeGoat framework to explore how OWASP Top 10 security risks manifest in Node.js web applications. Through hands-on exercises, I implemented effective strategies to mitigate these risks, gaining practical insights into web application security and enhancing my skills in securing Node.js-based applications.</p>
+                <a href="https://github.com/shaniaworks/NodeGoat">GitHub Repository</a>
             </div>
         </div>
-    </header>
 
-    <!-- About Me Section -->
-    <section id="about" class="about-section">
-        <h2 class="section-title">About Me</h2>
-        <div class="section-content">
-            <!-- Content for About Me section -->
+        <!-- Project 2: ActiveDirectoryLab -->
+        <div class="project animate__animated animate__fadeIn">
+            <div class="project-box">
+                <img src="threat-detection-icon.png" alt="Threat Detection Icon">
+                <h3>ActiveDirectoryLab</h3>
+                <p>In this project, I undertook the task of setting up Active Directory in a home lab environment using Oracle VirtualBox. By diving into the configuration and operation of this lab, I aimed to deepen understanding of Active Directory and Windows networking principles. For any inquiries, feel free to reach out.</p>
+                <a href="https://github.com/shaniaworks/ActiveDirectoryLab">GitHub Repository</a>
+            </div>
         </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <h2 class="section-title">Experience</h2>
-        <div class="section-content">
-            <!-- Content for Experience section -->
+        <!-- Project 3: Project-Management-Software -->
+        <div class="project animate__animated animate__fadeIn">
+            <div class="project-box">
+                <img src="data-encryption-icon.png" alt="Data Encryption Icon">
+                <h3>Project-Management-Software</h3>
+                <p>Ensuring data confidentiality and compliance with privacy regulations through encryption and secure data handling practices.</p>
+                <a href="https://github.com/shaniaworks/Project-Management-Software">GitHub Repository</a>
+            </div>
         </div>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education-section">
-        <h2 class="section-title">Education</h2>
-        <div class="section-content">
-            <!-- Content for Education section -->
+        <!-- Project 4: chaskiq -->
+        <div class="project animate__animated animate__fadeIn">
+            <div class="project-box">
+                <img src="data-encryption-icon.png" alt="Data Encryption Icon">
+                <h3>chaskiq</h3>
+                <p>Ensuring data confidentiality and compliance with privacy regulations through encryption and secure data handling practicesIn this project, I prepared a comprehensive messaging platform, Chaskiq, tailored for marketing, support, and sales needs. Featuring customer segment filters, web messenger embed, video calls, and more, it serves as a robust customer service solution. Explore Chaskiq for efficient communication and enhanced user engagement..</p>
+                <a href="https://github.com/shaniaworks/chaskiq">GitHub Repository</a>
+            </div>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2 class="section-title">Projects</h2>
-        <div class="section-content">
-            <!-- Content for Projects section -->
+        <!-- Project 5: gun -->
+        <div class="project animate__animated animate__fadeIn">
+            <div class="project-box">
+                <img src="data-encryption-icon.png" alt="Data Encryption Icon">
+                <h3>gun</h3>
+                <p>In this process, I prepared a comprehensive ecosystem called GUN, facilitating the development of community-run and encrypted applications. Analogous to an Open Source Firebase or a Decentralized Dropbox, GUN is utilized by prominent entities like the Internet Archive and was integrated into Twitter's bluesky initiative. It offers multiplayer functionality with real-time peer-to-peer state synchronization, supports diverse data structures including key/value pairs, tables, documents, and videos, and ensures local-first, offline, and decentralized operations with end-to-end encryption.</p>
+                <a href="https://github.com/shaniaworks/gun">GitHub Repository</a>
+            </div>
         </div>
-    </section>
+        
+   <!-- Contact Section -->
+<section id="contact" style="text-align: center;">
+    <h2 style="font-family: 'Arial', sans-serif; font-size: 32px;">Contact</h2>
+    <div class="contact-section">
+        <p>Email: shaniashaniaworks@gmail.com</p>
+        <p>Phone: +1 (917) 379-0194</p> <!-- Add your phone number here -->
+        <!-- Other contact information goes here -->
+    </div>
+</section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <h2 class="section-title">Skills</h2>
-        <div class="section-content">
-            <!-- Content for Skills section -->
-        </div>
-    </section>
+        
+<!-- Social Media Links -->
+        <p>
+            <a href="https://www.linkedin.com/in/shania-sitton/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/shaniaworks" target="_blank">GitHub</a>
+            <!-- Add more social media links as needed -->
+        </p>
+    </div>
+</section>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates-section">
-        <h2 class="section-title">Certificates</h2>
-        <div class="section-content">
-            <!-- Content for Certificates section -->
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2 class="section-title">Contact</h2>
-        <div class="section-content">
-            <form>
-                <input type="email" name="email" placeholder="Your email">
-                <textarea name="message" placeholder="Your message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
-
+    
     <!-- Footer Section -->
-    <footer class="footer">
+    <section class="footer-section">
         <p>All rights reserved &copy; 2024 Shania Sitton</p>
-        <div class="up-arrow">&#8593;</div>
-        <div class="social-icons">
-            <img src="linkedin-icon.png" alt="LinkedIn">
-            <img src="github-icon.png" alt="GitHub">
-            <!-- Add more social media icons as needed -->
-        </div>
-    </footer>
+    </section>
 </body>
 </html>
