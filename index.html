@@ -142,7 +142,46 @@
     .skill-box p {
         margin-bottom: 10px;
     }
-</style>
+        /* Get In Touch Section */
+#contact {
+    margin-top: 50px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-item {
+    width: calc(33.33% - 10px);
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
     </style>
 </head>
 <body>
@@ -274,16 +313,24 @@
     </div>
 </section>
         
-   <!-- Contact Section -->
-<section id="contact" style="text-align: center;">
-    <h2 style="font-family: 'Arial', sans-serif; font-size: 32px;">Contact</h2>
-    <div class="contact-section">
-        <p>Email: shaniashaniaworks@gmail.com</p>
-        <p>Phone: +1 (917) 379-0194</p> <!-- Add your phone number here -->
-        <!-- Other contact information goes here -->
+   <!-- Get In Touch Section -->
+<section id="contact">
+    <div class="contact-box">
+        <h2>Get In Touch</h2>
+        <!-- Email Input Box -->
+        <div class="contact-item">
+            <input type="email" id="email" name="email" placeholder="Your Email" class="input-box">
+        </div>
+        <!-- Message Input Box -->
+        <div class="contact-item">
+            <textarea id="message" name="message" placeholder="Your Message" rows="6" class="input-box"></textarea>
+        </div>
+        <!-- Send Button -->
+        <div class="contact-item">
+            <button type="submit" class="send-button">Send</button>
+        </div>
     </div>
 </section>
-
         
 <!-- Social Media Links -->
         <p>
