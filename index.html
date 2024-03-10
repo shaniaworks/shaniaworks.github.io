@@ -181,6 +181,28 @@
 .send-button:hover {
     background-color: #0056b3;
 }
+        /* Footer Section */
+.footer-section {
+    padding: 20px;
+    background-color: darkgrey;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media-icons img {
+    width: 30px;
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
@@ -341,9 +363,14 @@
 </section>
 
     
-    <!-- Footer Section -->
-    <section class="footer-section">
+   <!-- Footer Section -->
+<section class="footer-section">
+    <div class="footer-content">
         <p>All rights reserved &copy; 2024 Shania Sitton</p>
-    </section>
-</body>
-</html>
+        <div class="social-media-icons">
+            <a href="https://www.linkedin.com/in/shania-sitton/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/shaniaworks" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+        </div>
+    </div>
+</section>
+
