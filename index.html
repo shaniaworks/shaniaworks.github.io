@@ -181,28 +181,27 @@
 .send-button:hover {
     background-color: #0056b3;
 }
-        /* Footer Section */
+       /* Footer Section */
 .footer-section {
-    padding: 20px;
     background-color: darkgrey;
     color: white;
+    padding: 20px;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    float: left;
+}
+
+.social-media-icons {
+    float: right;
 }
 
 .social-media-icons img {
-    width: 30px;
-    cursor: pointer;
+    width: 30px; /* Adjust size as needed */
+    margin-left: 10px; /* Add space between icons */
 }
+
     </style>
 </head>
 <body>
@@ -366,7 +365,7 @@
  <!-- Footer Section -->
 <footer class="footer-section">
     <div class="footer-content">
-        <p>All rights reserved &copy; 2024 Shania Sitton</p>
+        <p class="copyright">&copy; 2024 Shania Sitton</p>
     </div>
     <div class="social-media-icons">
         <a href="https://www.linkedin.com/in/shania-sitton/" target="_blank"><img src="linkedin-logo.png" alt="LinkedIn"></a>
